@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
 
-  # ルートの設定
   root 'welcome#index'
+
+  get '/auth/:provider/callback' => 'sessions#login'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
