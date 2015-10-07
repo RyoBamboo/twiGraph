@@ -15,6 +15,13 @@ gem 'jquery-rails', '3.0.4'
 gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 
+#OAuth
+gem 'omniauth', '~> 1.2.1'
+gem 'omniauth-twitter', '~> 1.0.1'
+
+#Uikit
+gem 'uikit-sass-rails', git: 'https://github.com/8398a7/uikit-sass-rails'
+
 group :doc do
   gem 'sdoc', '0.3.20', require: false
 end
