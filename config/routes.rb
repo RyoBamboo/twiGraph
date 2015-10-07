@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
 
+  # root_path
   root 'welcome#index'
 
+  # login
   get '/auth/:provider/callback' => 'sessions#login'
+
+  # logout
+  get '/logout' => 'sessions#logout'
 
 
   # Example of regular route:
